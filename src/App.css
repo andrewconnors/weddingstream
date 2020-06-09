@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #61dafb;
-  height: 100vh;
+  background-color: white;
+  height: 200vh;
   width: 100vw;
   margin-top: -10%;
 }
@@ -43,6 +43,15 @@
 
 .subheading{
   margin-bottom: 3%;
+}
+
+.YoutubeVideo{
+  display: none;
+}
+
+.placeholder-image{
+  height: 50%;
+  width: 50%;
 }
 
 @keyframes App-logo-spin {

@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component{
   render(){
+    console.log(process.env.REACT_APP_VIDEO_ID)
     const options = {
       width: '640',
       playerVars: {
@@ -18,7 +19,16 @@ class App extends Component{
           The ceremony is scheduled to begin on July 4th, 2020 at 4pm AST.
           Tune in then to watch!
         </h5>
-        <YouTube videoId="2g811Eo7K8U" opts={options} onReady={this._onReady} />;
+        {process.env.REACT_APP_VIDEO_ID &&
+          <div>
+            <YouTube videoId={process.env.REACT_APP_VIDEO_ID} opts={options}/>;
+          </div>
+        }
+        {!process.env.REACT_APP_VIDEO_ID &&
+          <div>
+            <img className="placeholder-image" src="https://cdn0.weddingwire.ca/usr/5/6/4/7/sfxb_663284.jpg"></img>
+          </div>
+        }
       </div>
     )
   }
