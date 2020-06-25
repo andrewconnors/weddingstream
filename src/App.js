@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import YouTube from 'react-youtube';
 import ReactTwitchEmbedVideo from "react-twitch-embed-video"
 import './App.css';
+import FAQ from './FAQ'
 
 class App extends Component{
   render(){
@@ -18,7 +19,7 @@ class App extends Component{
         <h1 className="header">Andrew & Jacqueline <br /> Live Wedding Stream</h1>
         <h5 className="centered subheading">
           The ceremony is scheduled to begin on July 4th, 2020 at 4:30pm AST.
-          Tune in then to watch!
+          Tune in then to watch!<br /> Check out the FAQ below for more info.
         </h5>
         {process.env.REACT_APP_YOUTUBE_VIDEO_ID &&
           <div>
@@ -36,6 +37,7 @@ class App extends Component{
             <img alt={"Andrew&Jacqueline"} className="placeholder-image" src="https://cdn0.weddingwire.ca/usr/5/6/4/7/sfxb_663284.jpg"></img>
           </div>
         }
+        <FAQ />
       </div>
     )
   }
