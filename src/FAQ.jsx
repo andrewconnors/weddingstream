@@ -67,11 +67,6 @@ class FAQ extends React.Component{
                   We will be recording the ceremony and posting the video on the site for a few days after the big day, Andrew might
                   be a bit delayed in doing this, you know, with being newly married and everything. But he'll try to get it up ASAP.
                 </p>
-                <h6>8) Are You Still Doing a Reception Next Year?</h6>
-                <p className="questionBody">
-                  We are! July 17th 2021. More details to follow, keep an eye on your email and on the 
-                  website for more information!
-                </p>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
