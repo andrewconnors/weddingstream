@@ -49,20 +49,28 @@ class FAQ extends React.Component{
                 <p className="questionBody">
                   We will be starting the stream at 4:00pm AST (or earlier) but the ceremony will start at 4:30pm AST.
                 </p>
-                <h6>4) Why Don't the Groomsmen Match?</h6>
+                <h6>4) Why can't I comment?</h6>
+                <p className="questionBody">
+                  If you want to add a comment to the stream, you'll have to create a twitch account first. Twitch is used by millions around the world so you can feel safe making an account with them!
+                </p>
+                <h6>5) Why are there 0 viewers?</h6>
+                <p className="questionBody">
+                  The video player seems to only register viewers who are watching the stream directly from twitch so you won't see any viewers unfortunately whether they're there or not.
+                </p>
+                <h6>6) Why Don't the Groomsmen Match?</h6>
                 <p className="questionBody">
                   Hey now, We're trying our best.
                 </p>
-                <h6>5) I Hit Play But I Only See a Loading Icon...</h6>
+                <h6>7) I Hit Play But I Only See a Loading Icon...</h6>
                 <p className="questionBody">
                   You're in a great spot! Keep the player the way it is and it should start playing as soon as we start the stream.
                 </p>
-                <h6>6) The Stream Cut Out!</h6>
+                <h6>8) The Stream Cut Out!</h6>
                 <p className="questionBody">
                   We are really hoping this doesn't happen but if it does, we will be recording the ceremony as well as streaming.
                   We will post the resulting video to the site for a few days after the big day!
                 </p>
-                <h6>7) Are You Recording This?</h6>
+                <h6>9) Are You Recording This?</h6>
                 <p className="questionBody">
                   We will be recording the ceremony and posting the video on the site for a few days after the big day, Andrew might
                   be a bit delayed in doing this, you know, with being newly married and everything. But he'll try to get it up ASAP.
