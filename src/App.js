@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import YouTube from 'react-youtube';
 import ReactTwitchEmbedVideo from "react-twitch-embed-video"
+import ReactPlayer from 'react-player'
 import './App.css';
 import FAQ from './FAQ'
 
@@ -32,7 +33,24 @@ class App extends Component{
 
           </div>
         }
-        {!process.env.REACT_APP_TWITCH_CHANNEL && !process.env.REACT_APP_YOUTUBE_VIDEO_ID &&
+        {process.env.REACT_APP_S3_VIDEO_URL &&
+          <div className="s3Player">
+            <ReactPlayer
+              className="s3Player2"
+              url={[
+                  {src: process.env.REACT_APP_S3_VIDEO_URL, type: 'video/mp4'},
+                ]}
+                config={{file:{ attributes:{autoPlay: true, controls: true}}}}
+                playing={true}
+                loop={true}
+                width='85%'
+                height='85%'
+            />
+
+          </div>
+        }
+
+        {!process.env.REACT_APP_TWITCH_CHANNEL && !process.env.REACT_APP_YOUTUBE_VIDEO_ID && !process.env.REACT_APP_S3_VIDEO_URL &&
           <div>
             <img alt={"Andrew&Jacqueline"} className="placeholder-image" src="https://cdn0.weddingwire.ca/usr/5/6/4/7/sfxb_663284.jpg"></img>
           </div>
